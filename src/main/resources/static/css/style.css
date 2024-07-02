@@ -1,0 +1,213 @@
+@charset "UTF-8";
+*{
+	font-family: "Edu NSW ACT Foundation", cursive;
+	font-weight: 700;
+  	font-style: normal;
+}
+
+.head-bar{
+	font-size: 4em; 
+	color: rgb(50, 72, 86);
+}
+.middle-right-bar{
+	position: absolute; 
+	top: 20vh; 
+	right: 20vw;
+}
+.upper-mid-right{
+	display:flex;
+	margin-bottom: 5vh;
+}
+
+.tasks-block{
+	color: rgb(50, 72, 86);
+	
+	margin-right: 10vw;
+}
+
+.input-form{
+	color: #FFDEAD;;
+	/* display:flex; */
+	justify-content: center;
+	align-items:center;
+	
+}
+.input-form h3{
+	color: rgb(50, 72, 86);
+}
+
+.input-area{
+	display:flex;
+	align-items:center;
+	margin-bottom: 2vh;
+}
+.input-label, .input-radio{
+	margin-right:2vw;
+	
+}
+.input-btn{
+	background-color: #FFD700;
+	border-radius: 10px;
+	border:none;
+	padding:5px;
+	margin-left: 4vw;
+}
+.table th{
+	color: rgb(50, 72, 86);
+}
+.table td{
+	color:#D2691E;
+}
+
+
+/* ----------------------- Calendar ----------------------- */
+
+.calendar-container {
+    background: #fff;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top:20vh;
+    left:4vw;
+}
+ 
+.calendar-container header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+ 
+header .calendar-navigation {
+    display: flex;
+    
+}
+ 
+header .calendar-navigation span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+    color: #aeabab;
+    font-size: 1.9rem;
+}
+ 
+.calendar-navigation span:last-child {
+    margin-right: -10px;
+}
+ 
+header .calendar-navigation span:hover {
+    background: #f2f2f2;
+}
+ 
+header .calendar-current-date {
+    font-weight: 500;
+    font-size: 1.45rem;
+}
+ 
+.calendar-body {
+    padding: 20px;
+}
+ 
+.calendar-body ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+ 
+.calendar-body .calendar-dates {
+    margin-bottom: 20px;
+}
+ 
+.calendar-body li {
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    color: #414141;
+}
+ 
+.calendar-body .calendar-weekdays li {
+    cursor: default;
+    font-weight: 500;
+}
+ 
+.calendar-body .calendar-dates li {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+ 
+.calendar-dates li.inactive {
+    color: #aaa;
+}
+ 
+.calendar-dates li.active {
+    color: #fff;
+}
+ 
+.calendar-dates li::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.calendar-dates li.active::before {
+    background: #6332c5;
+}
+ 
+.calendar-dates li:not(.active):hover::before {
+    background: #e4e1e1;
+}
+
+
+/* ----------------------- Calendar ----------------------- */
+
+/* ----------------------- Timer ----------------------- */
+.timer{
+	margin-left: 15vw;
+	font-size:1.5em;
+}
+.timer h2{
+	color: rgb(50, 72, 86);
+	font-size:1.5em;
+	margin-left: 2vw;
+}
+.timer-input{
+	border-radius:5px;
+	padding: 1vw;
+}
+
+#display{
+	color:#D2691E;
+	margin: 1vh 5vw;
+	font-size:1.5em;
+}
+
+#start{
+	color:rgb(50, 72, 86);
+	margin: 1vh 8vw;
+	border-radius:5px;
+}
+
+.timer-btn:hover{
+	cursor: pointer;
+	color:9ACD32;
+	margin: 1vh 8vw;
+	border-radius:5px;
+}
+
+
+
